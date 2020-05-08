@@ -40,6 +40,7 @@ end
 counts=num2cell(counts); %convert matrix to cell array.
 
 %Save results.
+fprintf('Saving...\n'); %inform user of progress.
 results=[geneIDs,counts]; %concatenate cell arrays.
 writecell(results,'all_barcodes_counts.txt','Delimiter','tab'); %save TXT file.
 clear
